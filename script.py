@@ -53,3 +53,17 @@ while size_of_poetry > 0:
   size_of_poetry += -1
 
 print(students_in_poetry)
+
+### Exercise 5 ###
+#List Comprehension
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+can_ride_coaster = [height for height in heights if height > 161]
+print(can_ride_coaster)
+
+#if there is an if/else clause, then put the if/else in front of the for statement else vise verse
+#The if/else is placed in front of the for component of the list comprehension.
+#The left side of statement is 'action will be occured' according to result of right side's execution
+divbythree = ["Yes" if number % 3 == 0 else "No" for number in range(1,20)]
+print(divbythree)
+
+### Exercise 6 ###
