@@ -18,8 +18,11 @@ names.sort()
 cities = ['London', 'Paris', 'Rome', 'Los Angeles', 'New York']
 
 sorted_cities = cities.sort()
+### output will be 'None', however cities list will be sorted. if we use sorted() function to sort, output will be sorted list 'sorted_cities' although 'cities' list is not sorted. It is because sorted() function returns a sorted list value but does not change the original list 
 print(sorted_cities)
+###output will also be 'None' but 'addresses' list's itself sorted
 print(addresses.sort())
+###output will be alphabetically sorted addresses list
 print(addresses)
 
 ### Exercise 3 ###
