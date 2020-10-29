@@ -42,3 +42,14 @@ user_name = "angela_catlady_87"
 print(dave_check(user_name))
 
 ### Exercise 4 ###
+all_students = ["Alex", "Briana", "Cheri", "Daniele", "Dora", "Minerva", "Alexa", "Obie", "Arius", "Loki"]
+students_in_poetry = []
+
+size_of_poetry = 6
+
+while size_of_poetry > 0:
+  pop() function retrieves an element from the end of a list
+  students_in_poetry.append(all_students.pop())   
+  size_of_poetry += -1
+
+print(students_in_poetry)
