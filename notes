@@ -1,0 +1,54 @@
+Python dili kendine özgü özellikleri
+-	Keyword Argument
+-	String ve Integer concatenation
+-	Bolme islemi yapmadan once sayilari floata donuturup boler python, yani sonuc her zaman float olur 
+-	Fonksiyon tanim araligi - whitespace
+-	Identifier(int, string, var, float vs),  ‘;’ ve ‘{}’ kullanmama
+-	def – identifier for function
+-	multiple line string(‘’’)
+-	comment(#), command ile karistirilmasin. Command kod içerisinde yazan execution yaptigimiz komutlarin hepsini ifade eder
+-	exponent(**)
+-	multiple return
+-	multiple assign
+-	fonksiyon(metod) ici parametrelere identifier(string, int gibi) belirlemeye gerek yok
+-	string multiplying (exp: "na"*6 = "nananananana")
+-	>>> - prompt from terminal
+-	True ve False buyuk harfle type:bool
+-	İf … :
+-	“:” means “then”   -> if-then mantigi
+-	try: (using for error control)
+    statement
+ except ErrorName:
+    statement
+-	list object can include different data type
+-	list of lists
+-	zip object(returns an object) – stores location of memory, to see it convert it to list by list(names_of_new_zipped_list)
+-	Appending to a list: list.append()
+-	Range – for consecutive orders, returns an object, you have to return a list
+-	list + [el1, el2, …]
+-	list = range(0,40,3) – 0’dan 40’a kadar 3 er 3 er artan sayilarin range objesi(list formuna dönüştürmek için bir de list fonksiyonunu kullanmak lazim) 
+-	len() func. for length of a list
+-	int() function takes a number and cuts off the decimal point. For example, int(5.9) and int(5.0) will both become 5
+-	list(-1) = selecting list’s last element
+-	slicing: list[start:end] ‘start’ and ‘end’ are indexes 
+-	fonksiyonlar eger bizim arzu ettiğimiz spesifik bir değeri variable olarak aliyorsa data_type.func(variable) formatinda olurken direk olarak bizim o fonksiyonu cagirdigimiz data typini variable olarak kullaniyorsa ise func(data_type) seklinde cagiriliyor. Istisna(exception): names.sort(), sort(names) hata verir
+-	num_of_i = list.count(‘i’) : returns an integer
+-	sort does not return anything.
+-	sorted(list): returns a new sorted list and does not change ‘list’ object’s itself
+-	tuples: similar to lists but some differeces like non-modified(means an element at specific index can not be modified after assingned a value once, can not be changed ordering, cannot be added or removed an element), declared with paranthesis
+   info = (‘huseyin’, 23)
+   name, age = info    //name = huseyin and age = 23
+   >>>one_element_tuple = (4)
+   >>>one_element_tuple
+   4
+   >>>one_element_tuple = (4,)
+   >>>one_element_tuple
+   (4,)
+- ‘continue’ in for loop
+  ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+  for i in ages:
+    if i < 21:
+      continue
+    print(i)
+ 
+-	list comprehension
