@@ -9,3 +9,12 @@
 
 4. Stringler mutable degil mi? nihayetinde biz degistirebiliyoruz onlari
 ![image](https://user-images.githubusercontent.com/32467338/97790756-6cf9d700-1bdc-11eb-8638-721f9ec38654.png)
+
+5. with open('users.csv', newline='') as users_csv: burada newline='' argümanını anlamadım 
+import csv
+
+list_of_email_addresses = []
+with open('users.csv', newline='') as users_csv:
+  user_reader = csv.DictReader(users_csv)
+  for row in user_reader:
+    list_of_email_addresses.append(row['Email'])
