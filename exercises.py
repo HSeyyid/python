@@ -20,9 +20,9 @@ cities = ['London', 'Paris', 'Rome', 'Los Angeles', 'New York']
 sorted_cities = cities.sort()
 ### output will be 'None', however cities list will be sorted. if we use sorted() function to sort, output will be sorted list 'sorted_cities' although 'cities' list is not sorted. It is because sorted() function returns a sorted list value but does not change the original list 
 print(sorted_cities)
-###output will also be 'None' but 'addresses' list's itself sorted
+### output will also be 'None' but 'addresses' list's itself sorted
 print(addresses.sort())
-###output will be alphabetically sorted addresses list
+### output will be alphabetically sorted addresses list
 print(addresses)
 
 ### Exercise 3 ###
@@ -55,6 +55,7 @@ while size_of_poetry > 0:
 print(students_in_poetry)
 
 ### Exercise 5 ###
+
 #List Comprehension
 heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
 can_ride_coaster = [height for height in heights if height > 161]
@@ -78,3 +79,49 @@ def delete_starting_evens(lst):
 #Uncomment the lines below when your function is done
 print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
 print(delete_starting_evens([4, 8, 10]))
+
+### Exercise 7 ###
+#Write your function here
+def odd_indices(lst):
+  odd_indexed_lst = []
+  length = len(lst)
+  i = 1
+  while i < length:
+    odd_indexed_lst.append(lst[i])
+    i += 2
+
+  return odd_indexed_lst
+
+#Uncomment the line below when your function is done
+print(odd_indices([4, 3, 7, 10, 11, -2]))
+print(odd_indices([4]))
+
+### Exercise 8 ###
+
+#Write your function here
+def exponents(bases, powers):
+  raised_list = []
+  for base in bases:
+    for power in powers:
+      raised_list.append(base**power)
+  
+  return raised_list
+
+#Uncomment the line below when your function is done
+print(exponents([0, 3, 4], [0, 2, 3]))
+
+### Exercise 9 ###
+
+#Write your function here
+def reversed_list(lst1, lst2):
+  length  = len(lst1)
+  i = 0
+  while i < length:
+    if lst1[i] != lst2[length - (i+1)]:
+      return False
+    i += 1
+  return True
+  
+#Uncomment the lines below when your function is done
+print(reversed_list([1, 2, 3], [3, 2, 1]))
+print(reversed_list([1, 5, 3], [3, 2, 1]))
